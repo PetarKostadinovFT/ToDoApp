@@ -27,8 +27,11 @@ function App() {
     setExpandedTasks(expandedTasks.filter(item => item !== index));
   };
 
-
-
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter' && newTask.trim() !== '') {
+      addTask();
+    }
+  };
 
   return (
     <div className="App">
@@ -41,6 +44,7 @@ function App() {
             placeholder="Enter a new task"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
+            onKeyDown={handleKeyPress}
           />
           <button className="add-button" onClick={addTask}>
             Add Task
