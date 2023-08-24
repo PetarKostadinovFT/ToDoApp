@@ -80,11 +80,11 @@ function App() {
               </a>
             </li>
             <li className="nav__item" />
-            <a href="#" className="nav__link">
+            <a href="#home" className="nav__link">
               About
             </a>
             <li className="nav__item" />
-            <a href="#" className="nav__link">
+            <a href="#portfolio" className="nav__link">
               Portfolio
             </a>
             <li className="nav__item" />
