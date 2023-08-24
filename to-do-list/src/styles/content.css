@@ -1,0 +1,115 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    box-sizing: border-box; 
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6B6B;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    margin-bottom: 10px;
+    height: 50px;
+    outline-color:#F9EBD2;
+  }
+  
+  .add-button {
+    background-color: #FF6B6B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 10px;
+    max-height: 72px;
+  }
+  
+  .add-button:hover {
+    background-color: #E64A4A;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F9EBD2;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .task-list{
+    height: 260px;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    color: #555;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .delete-button {
+    background-color: #FF6B6B;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    background-color: #E64A4A;
+  }
+  
+  .task-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    color: #555;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    word-wrap: break-word;
+    
+  }
+  
+  .task-item:hover .task-text {
+    white-space: normal;
+    color: #333;
+  }
+  
+  
